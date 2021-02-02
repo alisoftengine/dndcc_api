@@ -1,0 +1,15 @@
+{
+   "name": "dndcc_api",
+   "version": "1.0.0",
+   "main": "index.js",
+   "repository": "git@github.com:alisoftengine/dndcc_api.git",
+   "author": "fahali <fahim.ali.204@gmail.com>",
+   "license": "MIT",
+   "dependencies": {
+      "express": "^4.17.1",
+      "mongoose": "^5.11.14"
+   },
+   "devDependencies": {
+      "nodemon": "^2.0.7"
+   }
+}
