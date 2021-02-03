@@ -1,0 +1,53 @@
+[
+   {
+      "player": "Fahim",
+      "campaign": "SEI DnD",
+      "name": "Gimli the Mighty",
+      "sex": "male",
+      "race": "mountain dwarf",
+      "class": "strong fighter",
+      "abilities": {
+         "strength": 15,
+         "dexterity": 8,
+         "constitution": 14,
+         "intelligence": 10,
+         "wisdom": 12,
+         "charisma": 13
+      },
+      "background": "folk hero",
+      "alignment": "lawful good"
+   },
+   {
+      "campaign": "SEI DnD",
+      "name": "Eulalia",
+      "sex": "male",
+      "race": "lightfoot halfling",
+      "class": "cleric",
+      "abilities": {
+         "strength": 14,
+         "dexterity": 10,
+         "constitution": 13,
+         "intelligence": 15,
+         "wisdom": 8,
+         "charisma": 12
+      },
+      "background": "sage",
+      "alignment": "chaotic evil"
+   },
+   {
+      "name": "Terra",
+      "sex": "female",
+      "race": "human",
+      "class": "cleric",
+      "abilities": {
+         "strength": 8,
+         "dexterity": 10,
+         "constitution": 12,
+         "intelligence": 14,
+         "wisdom": 15,
+         "charisma": 13
+      },
+      "background": "noble",
+      "alignment": "neutral neutral"
+   }
+]
