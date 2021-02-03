@@ -1,13 +1,15 @@
 const express = require('express');
-const app = express();
+const cors = require('cors');
 const charactersRouter = require('./controllers/characters');
 
+const app = express();
+
 //*------= Middleware =------*\\
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 //*------= Start Routes =------*\\
-
 app.use('/characters', charactersRouter);
 
 app.get('/', (req, res) => {
@@ -15,6 +17,7 @@ app.get('/', (req, res) => {
 });
 //*------= End Routes =------*\\
 
+//*------= Start App =------*\\
 app.set('port', 3000);
 
 app.listen(app.get('port'), () => {
