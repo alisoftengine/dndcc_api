@@ -3,11 +3,21 @@ const router = express.Router();
 const Character = require('../db/models/character');
 
 router.get('/', (req, res) => {
-   Character.find({}).then(characters => res.json(characters));
+   Character.find({})
+      .then(characters => res.json(characters))
+      .catch(err => {
+         console.error(err);
+         next();
+      });
 });
 
 router.get('/:id', (req, res) => {
-   Character.findById(req.params.id).then(character => res.json(character));
+   Character.findById(req.params.id)
+      .then(character => res.json(character))
+      .catch(err => {
+         console.error(err);
+         next();
+      });
 });
 
 router.post('/', (req, res, next) => {
