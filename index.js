@@ -18,7 +18,7 @@ app.get('/', (req, res) => {
 //*------= End Routes =------*\\
 
 //*------= Start App =------*\\
-app.set('port', process.env.PORT || 3000);
+app.set('port', process.env.PORT || 4000);
 
 app.listen(app.get('port'), () => {
    console.log(`PORT: ${app.get('port')}`);
