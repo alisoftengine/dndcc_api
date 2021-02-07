@@ -3,11 +3,21 @@ const router = express.Router();
 const Character = require('../db/models/character');
 
 router.get('/', (req, res) => {
-   Character.find({}).then(characters => res.json(characters));
+   Character.find({})
+      .then(characters => res.json(characters))
+      .catch(err => {
+         console.error(err);
+         next();
+      });
 });
 
 router.get('/:id', (req, res) => {
-   Character.findById(req.params.id).then(character => res.json(character));
+   Character.findById(req.params.id)
+      .then(character => res.json(character))
+      .catch(err => {
+         console.error(err);
+         next();
+      });
 });
 
 router.post('/', (req, res, next) => {
@@ -20,7 +30,7 @@ router.post('/', (req, res, next) => {
 });
 
 router.put('/:id', (req, res, next) => {
-   Character.findOneAndUpdate(req.params.id, req.body, { new: true })
+   Character.findByIdAndUpdate(req.params.id, req.body, { new: true })
       .then(character => res.json(character))
       .catch(err => {
          console.error(err);
@@ -29,8 +39,9 @@ router.put('/:id', (req, res, next) => {
 });
 
 router.delete('/:id', (req, res, next) => {
-   Character.findOneAndRemove(req.params.id)
-      .then(() => res.redirect('/'))
+   Character.findByIdAndDelete(req.params.id)
+      // .then(() => res.redirect('/characters'))
+      .then(() => res.send('OK!'))
       .catch(err => {
          console.error(err);
          next();
