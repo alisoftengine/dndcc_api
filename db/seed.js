@@ -1,4 +1,3 @@
-const { Model } = require('mongoose');
 const Character = require('./models/character');
 const data = require('./seed.json');
 
