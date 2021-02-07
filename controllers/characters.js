@@ -30,7 +30,7 @@ router.post('/', (req, res, next) => {
 });
 
 router.put('/:id', (req, res, next) => {
-   Character.findOneAndUpdate(req.params.id, req.body, { new: true })
+   Character.findByIdAndUpdate(req.params.id, req.body, { new: true })
       .then(character => res.json(character))
       .catch(err => {
          console.error(err);
@@ -39,8 +39,9 @@ router.put('/:id', (req, res, next) => {
 });
 
 router.delete('/:id', (req, res, next) => {
-   Character.findOneAndRemove(req.params.id)
-      .then(() => res.redirect('/'))
+   Character.findByIdAndDelete(req.params.id)
+      // .then(() => res.redirect('/characters'))
+      .then(() => res.send('OK!'))
       .catch(err => {
          console.error(err);
          next();
