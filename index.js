@@ -8,12 +8,13 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.set('view engine', 'hbs');
 
 //*------= Start Routes =------*\\
 app.use('/characters', charactersRouter);
 
 app.get('/', (req, res) => {
-   res.send('connection established');
+   res.render('welcome');
 });
 //*------= End Routes =------*\\
 
