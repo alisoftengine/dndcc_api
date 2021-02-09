@@ -1,6 +1,6 @@
-# GA-SEI-Project-Three
+# Dungeons and Dragons Character Creator API (DnDCC_API)
 
-## Dungeons and Dragons Character Creator (DnDCC)
+#### GA-SEI-Project-Three
 
 #### SEI: 1130, Project Three
 
