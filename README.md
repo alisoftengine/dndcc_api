@@ -12,7 +12,7 @@
 
 ## Welcome
 
-Welcome to the **Dungeons and Dragons Character Creator API (DnDCC_API)**, which is the API serving requests from the **Dungeons and Dragons Character Creator (DnDCC)** web-app. **DnDCC_API** was developed by **Keenan Ward**, **Fahim Ali**, and **Joachim Cañete**, students in General Assembly's Software Engineering Immersive Program, Cohort SEI: 1130.
+Welcome to the **Dungeons and Dragons Character Creator API (DnDCC_API)**, which is the API serving requests from the **Dungeons and Dragons Character Creator (DnDCC)** web-app. **DnDCC_API** was developed by **Keenan Ward**, **Fahim Ali**, and **Joachim Cañete**.
 
 ## About
 
@@ -20,15 +20,15 @@ The **DnDCC_API** server runs on `Express`, with connections to `MongoDB` via `M
 
 ## Deployment
 
-**DnDCC_API** was deployed via [MongoDB](https://www.mongodb.com/), a document-based, distributed database.
+**DnDCC_API** was deployed via [Heroku](https://www.heroku.com/), which communicates with a MongoDB database on Atlas.
 
 ## Development
 
-_Back-end_ scaffolding was built to provide the _front-end_ with **RESTful API** functionality. Utilizing the **DnDCC_API** to create and store this information, API calls were made in the front-end components to render consistent information across all characters created. The scaffolding of a back-end wireframe aided in fleshing out the structure of the files and their usability for later development of front-end applications.
+_Back-end_ scaffolding was built to provide the _front-end_ with **RESTful API** functionality. Utilizing the **DnDCC_API** to create and store this information, API calls were made in the front-end components to render consistent information across all characters created. The scaffolding of a back-end wireframe aided in fleshing out the structure of the files and their usability for later development of front-end applications. he back-end database is complete with a homepage, via the Handlebars templating system which helps direct the user to the front-end of the app.
 
 ![backend_wireframe](https://i.imgur.com/c5wSmus.png)
 
-The core of the back-end lay in the `Model` used to structure the web-app's API. This schema would accept information that would be utilized all across the front end and is actively updated based on user interaction.
+The core of the back-end lay in the `Model` used to structure the web-app's API. This schema would accept information in a format that would be utilized all across the front end and is actively updated based on user interaction. This schema has specific accepted values which prevents erroneous data from being included in the database.
 
 ![character_schema](https://i.imgur.com/qMgF7I7.png)
 
