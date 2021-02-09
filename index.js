@@ -8,17 +8,14 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use('/public/styles', express.static('./public/styles'));
 
-app.set('view engine', 'hbs');
-
-// app.use(express.static(path.join(__dirname, '/public')));
+app.use(express.static('public'));
 
 //*------= Start Routes =------*\\
 app.use('/characters', charactersRouter);
 
 app.get('/', (req, res) => {
-   res.render('index');
+   res.render('index.html');
 });
 //*------= End Routes =------*\\
 
