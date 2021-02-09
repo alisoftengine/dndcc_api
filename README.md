@@ -10,17 +10,17 @@ The API server runs on Express, with connections to MongoDB via Mongoose.
 
 ### MVP
 
--  [ ] As a player, I want to model a character quickly and easily.
--  [ ] As a player, I want to input my name.
--  [ ] As a player, I want to input the campaign name.
--  [ ] As a player, I want to input the character’s name.
--  [ ] As a player, I want to choose the character’s sex.
--  [ ] As a player, I want to choose from the basic races.
--  [ ] As a player, I want to choose from the basic classes.
--  [ ] As a player, I would like to choose my ability point loadout (APL).
--  [ ] As a player, I want to choose from the basic backgrounds.
--  [ ] As a player, I want to choose from the nine alignments.
--  [ ] As a player, I want to peruse custom character loadouts that other people have created.
+-  [x] As a player, I want to model a character quickly and easily.
+-  [x] As a player, I want to input my name.
+-  [x] As a player, I want to input the campaign name.
+-  [x] As a player, I want to input the character’s name.
+-  [x] As a player, I want to choose the character’s sex.
+-  [x] As a player, I want to choose from the basic races.
+-  [x] As a player, I want to choose from the basic classes.
+-  [x] As a player, I would like to choose my ability point loadout (APL).
+-  [x] As a player, I want to choose from the basic backgrounds.
+-  [x] As a player, I want to choose from the nine alignments.
+-  [x] As a player, I want to peruse custom character loadouts that other people have created.
 
 ### Stretch Goals
 
@@ -30,15 +30,15 @@ The API server runs on Express, with connections to MongoDB via Mongoose.
 -  [ ] As a player, I want to choose starting equipment.
 -  [ ] As a player, I want randomly chosen starting equipment.
 -  [ ] As a player, I want a randomly chosen character name.
--  [ ] As a player, I want a randomly chosen race.
--  [ ] As a player, I want a randomly chosen sex.
+-  [x] As a player, I want a randomly chosen race.
+-  [x] As a player, I want a randomly chosen sex.
 -  [ ] As a player, I want to choose the height of my character.
 -  [ ] As a player, I want to choose the weight of my character.
 -  [ ] As a player, I want a randomly chosen height and weight.
--  [ ] As a player, I want a randomly chosen class.
+-  [x] As a player, I want a randomly chosen class.
 -  [ ] As a player, I want to use the base APL.
 -  [ ] As a player, I want to choose a custom starting level.
--  [ ] As a player, I want a randomly chosen APL.
+-  [x] As a player, I want a randomly chosen APL.
 -  [ ] As a player, I want a randomly chosen starting level.
 
 ### Platinum Goals
