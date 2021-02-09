@@ -16,7 +16,7 @@ Welcome to the **Dungeons and Dragons Character Creator API (DnDCC_API)**, which
 
 ## About
 
-The **DnDCC_API** server runs on `Express`, with connections to `MongoDB` via `Mongoose`. You can view the **DnDCC_API** [HERE](https://dndcc-api.herokuapp.com/characters)!
+The **DnDCC_API** server runs on `Express`, with connections to `MongoDB` via `Mongoose`. You can view the **DnDCC_API** [HERE](https://dndcc-api.herokuapp.com/)!
 
 ## Deployment
 
