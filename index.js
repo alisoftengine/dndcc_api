@@ -9,11 +9,13 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+app.use(express.static('public'));
+
 //*------= Start Routes =------*\\
 app.use('/characters', charactersRouter);
 
 app.get('/', (req, res) => {
-   res.send('connection established');
+   res.render('index.html');
 });
 //*------= End Routes =------*\\
 

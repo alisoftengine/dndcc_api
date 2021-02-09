@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Potta+One&display=swap');
+
+body {
+   background-color: #003049;
+   color: #fcbf49;
+   font-family: 'Montserrat', sans-serif;
+}
+header {
+   border-bottom: solid #dc3545 0.5rem;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 0.5rem;
+}
+
+a {
+   color: #f77f00;
+}
+
+p {
+   font-size: 0.75rem;
+}
+
+h4 {
+   font-size: 0.75rem;
+}
+
+.intro,
+.subheader {
+   font-size: 1.2rem;
+}
+.title {
+   font-size: 2.2rem;
+   display: flex;
+   align-self: center;
+   font-family: 'Potta One', cursive;
+}
+
+.endpoints {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.frontEndLink {
+   font-size: 1.1rem;
+}
+
+.toFrontEnd {
+   border: solid #dc3545 0.2rem;
+   margin: 2rem;
+   padding: 0.5rem;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   height: 13rem;
+}
+
+@media screen and (min-width: 768px) {
+   h4 {
+      font-size: 2rem;
+      margin: 0 auto;
+   }
+   .subheader {
+      font-size: 2rem;
+      align-self: flex-end;
+   }
+
+   .intro {
+      font-size: 2rem;
+      align-self: flex-start;
+   }
+
+   .title {
+      font-size: 3.8rem;
+   }
+
+   header {
+      height: 25rem;
+      padding: 0;
+   }
+   .toFrontEnd {
+      font-size: 2rem;
+      padding: 2rem;
+   }
+   .frontEndLink {
+      font-size: 2rem;
+   }
+   .endpoints {
+      font-size: 10rem;
+   }
+   .endLink {
+      font-size: 1.2rem;
+   }
+}
+
+@media screen and (min-width: 1000px) {
+   h4 {
+      font-size: 2rem;
+      margin: 0 auto;
+   }
+   h6 {
+      font-size: 2rem;
+   }
+
+   .subheader {
+      font-size: 2.5rem;
+      align-self: flex-end;
+      margin-right: 1rem;
+   }
+
+   .intro {
+      font-size: 2.5rem;
+      align-self: flex-start;
+      margin-left: 1rem;
+   }
+
+   .title {
+      font-size: 4rem;
+   }
+
+   header {
+      height: 30rem;
+      padding: 0;
+   }
+   .toFrontEnd {
+      font-size: 2rem;
+      padding: 4rem;
+   }
+   .frontEndLink {
+      font-size: 3.5rem;
+   }
+   .endpoints {
+      font-size: 8rem;
+      flex-direction: row;
+      border: solid #dc3545 0.2rem;
+      padding: 1rem;
+   }
+   #characters {
+      padding-right: 1rem;
+   }
+}
